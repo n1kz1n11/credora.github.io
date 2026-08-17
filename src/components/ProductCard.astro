@@ -1,0 +1,59 @@
+---
+import type { BankCardOffer, LoanOffer } from '../data/types';
+
+interface Props {
+  offer: LoanOffer | BankCardOffer;
+  position: number;
+}
+
+const { offer, position } = Astro.props;
+const typeLabel = offer.type;
+const requirementText = offer.requirements.slice(0, 2).join(' · ') || ('age' in offer ? offer.age ?? '' : '');
+// A null partnerUrl intentionally renders a disabled CTA until the real partner URL is supplied in data.
+---
+
+<article class="product-card" data-card-type={'cardType' in offer ? offer.cardType : undefined}>
+  <header class="product-head">
+    <div class:list={['offer-logo', `logo-${(position % 5) + 1}`]}>
+      <img
+        src={offer.imageUrl}
+        alt={offer.name}
+        width="48"
+        height="48"
+        loading={position <= 3 ? 'eager' : 'lazy'}
+        decoding="async"
+      />
+    </div>
+    <div>
+      <span class="product-type">{typeLabel}</span>
+      <h2>{offer.name}</h2>
+    </div>
+  </header>
+
+  <div class="conditions" aria-label="Основные условия">
+    {offer.primaryConditions.slice(0, 3).map((condition, index) => (
+      <div class:list={['condition', { featured: index === 0 }]}>{condition}</div>
+    ))}
+  </div>
+
+  <ul class="advantages" aria-label="Преимущества">
+    {offer.advantages.slice(0, 3).map((advantage) => <li>{advantage}</li>)}
+  </ul>
+
+  {requirementText && <p class="requirements">{requirementText}</p>}
+
+  <div class="card-action">
+    {offer.partnerUrl ? (
+      <a
+        class="button button-card partner-link"
+        href={offer.partnerUrl}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        data-product-id={offer.id}
+        data-product-name={offer.name}
+        data-category={offer.category}
+        data-position={position}
+      >Подробнее <span aria-hidden="true">→</span></a>
+    ) : <button class="button button-card disabled" type="button" disabled aria-disabled="true" title="Партнёрская ссылка пока не добавлена">Подробнее</button>}
+  </div>
+</article>

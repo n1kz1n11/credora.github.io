@@ -1,0 +1,66 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const { title, description, image = '/favicon.svg' } = Astro.props;
+const siteUrl = Astro.site;
+const canonical = siteUrl ? new URL(Astro.url.pathname, siteUrl) : undefined;
+const ogImage = siteUrl ? new URL(image, siteUrl) : undefined;
+const rawMetrikaId = import.meta.env.PUBLIC_YANDEX_METRIKA_ID ?? '';
+const metrikaId = /^\d+$/.test(rawMetrikaId) ? rawMetrikaId : '';
+---
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f5f8f6" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Credora" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <title>{title}</title>
+    {metrikaId && (
+      <script define:vars={{ metrikaId }}>
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+        window.ym(Number(metrikaId),'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true});
+      </script>
+    )}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">К содержанию</a>
+    <Header />
+    <main id="main-content"><slot /></main>
+    <Footer />
+    {metrikaId && (
+      <script define:vars={{ metrikaId }}>
+        document.addEventListener('click', function(event) {
+          if (!(event.target instanceof Element)) return;
+          var link = event.target.closest('.partner-link');
+          if (!link || typeof window.ym !== 'function') return;
+          window.ym(Number(metrikaId), 'reachGoal', 'partner_click', {
+            product_id: link.dataset.productId,
+            product_name: link.dataset.productName,
+            category: link.dataset.category,
+            position: Number(link.dataset.position)
+          });
+        });
+      </script>
+    )}
+  </body>
+</html>

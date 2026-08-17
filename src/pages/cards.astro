@@ -1,0 +1,27 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import BankCard from '../components/BankCard.astro';
+import CategoryTabs from '../components/CategoryTabs.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import { cards } from '../data/cards';
+import { catalogSummary } from '../data/integrity';
+
+const { cards: allCards, debitCards, creditCards } = catalogSummary;
+---
+<MainLayout title="Банковские карты — каталог предложений | Credora" description="Дебетовые и кредитные банковские карты: сравните кешбэк, обслуживание, лимит и льготный период.">
+  <section class="catalog-hero cards-hero">
+    <div class="container catalog-hero-inner">
+      <div><span class="breadcrumb"><a href="/">Главная</a><b>/</b> Карты</span><h1>Банковские карты</h1><p>Дебетовые и кредитные карты с понятными условиями.</p></div>
+      <div class="catalog-count"><strong>{cards.length}</strong><span>предложений<br />в каталоге</span></div>
+    </div>
+  </section>
+  <section class="catalog-section">
+    <div class="container">
+      <div class="filter-row"><CategoryTabs allCount={allCards} debitCount={debitCards} creditCount={creditCards} /><div class="catalog-note"><span class="dot"></span> Данные от финансовых организаций</div></div>
+      <div class="product-grid" id="card-catalog">
+        {cards.map((card, index) => <BankCard offer={card} position={index + 1} />)}
+      </div>
+      <Disclaimer compact />
+    </div>
+  </section>
+</MainLayout>

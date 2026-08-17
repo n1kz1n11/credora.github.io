@@ -1,0 +1,24 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import LoanCard from '../components/LoanCard.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import { loans } from '../data/loans';
+import { catalogSummary } from '../data/integrity';
+---
+<MainLayout title="Займы — каталог предложений | Credora" description="Сравните 17 предложений займов: суммы, сроки, ставки и основные требования на витрине Credora.">
+  <section class="catalog-hero">
+    <div class="container catalog-hero-inner">
+      <div><span class="breadcrumb"><a href="/">Главная</a><b>/</b> Займы</span><h1>Займы</h1><p>Сравните основные условия и выберите подходящее предложение.</p></div>
+      <div class="catalog-count"><strong>{loans.length}</strong><span>предложений<br />в каталоге</span></div>
+    </div>
+  </section>
+  <section class="catalog-section">
+    <div class="container">
+      <div class="catalog-note"><span class="dot"></span> Условия актуальны по данным финансовых организаций</div>
+      <div class="product-grid">
+        {loans.map((loan, index) => <LoanCard offer={loan} position={index + 1} />)}
+      </div>
+      <Disclaimer compact />
+    </div>
+  </section>
+</MainLayout>

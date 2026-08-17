@@ -1,0 +1,7 @@
+---
+import ProductCard from './ProductCard.astro';
+import type { BankCardOffer } from '../data/types';
+interface Props { offer: BankCardOffer; position: number }
+const { offer, position } = Astro.props;
+---
+<ProductCard {offer} {position} />

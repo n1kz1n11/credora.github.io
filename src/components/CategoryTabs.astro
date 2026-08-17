@@ -1,0 +1,45 @@
+---
+interface Props {
+  allCount: number;
+  debitCount: number;
+  creditCount: number;
+}
+
+const { allCount, debitCount, creditCount } = Astro.props;
+---
+
+<div class="category-tabs" role="group" aria-label="Фильтр карт" data-card-filters data-catalog="card-catalog">
+  <button class="active" type="button" data-filter="all" aria-controls="card-catalog" aria-pressed="true">Все <span>{allCount}</span></button>
+  <button type="button" data-filter="debit" aria-controls="card-catalog" aria-pressed="false">Дебетовые <span>{debitCount}</span></button>
+  <button type="button" data-filter="credit" aria-controls="card-catalog" aria-pressed="false">Кредитные <span>{creditCount}</span></button>
+</div>
+<p class="sr-only" data-filter-status aria-live="polite">Показано карт: {allCount}</p>
+
+<script>
+  const filterGroup = document.querySelector<HTMLElement>('[data-card-filters]');
+  const catalog = filterGroup?.dataset.catalog ? document.getElementById(filterGroup.dataset.catalog) : null;
+
+  if (!filterGroup || !catalog) {
+    throw new Error('Не найден каталог карт для фильтра.');
+  }
+
+  const tabs = filterGroup.querySelectorAll<HTMLButtonElement>('[data-filter]');
+  const cards = catalog.querySelectorAll<HTMLElement>('[data-card-type]');
+  const status = document.querySelector<HTMLElement>('[data-filter-status]');
+
+  tabs.forEach((tab) => tab.addEventListener('click', () => {
+    const filter = tab.dataset.filter;
+    tabs.forEach((item) => {
+      const active = item === tab;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    let visibleCount = 0;
+    cards.forEach((card) => {
+      const visible = filter === 'all' || card.dataset.cardType === filter;
+      card.hidden = !visible;
+      if (visible) visibleCount += 1;
+    });
+    if (status) status.textContent = `Показано карт: ${visibleCount}`;
+  }));
+</script>

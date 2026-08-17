@@ -1,0 +1,28 @@
+---
+import { siteContact } from '../data/site';
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand footer-brand" href="/" aria-label="Credora — главная">
+        <span class="brand-mark" aria-hidden="true">C</span><span>Credora</span>
+      </a>
+      <p class="footer-intro">Понятная витрина финансовых предложений.</p>
+      <address class="footer-contacts">
+        <a href={`mailto:${siteContact.email}`}>{siteContact.email}</a>
+        <a href={siteContact.phoneHref}>{siteContact.phone}</a>
+      </address>
+    </div>
+    <nav class="footer-nav" aria-label="Навигация в подвале">
+      <a href="/loans/">Займы</a>
+      <a href="/cards/">Карты</a>
+      <a href="/contacts/">Контакты</a>
+      <a href="/privacy/">Политика конфиденциальности</a>
+      <a href="/terms/">Пользовательское соглашение</a>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>Информация на сайте носит справочный характер. Условия финансовых продуктов могут изменяться. Перед оформлением ознакомьтесь с актуальными условиями на сайте соответствующей организации.</p>
+    <p>© {new Date().getFullYear()} Credora</p>
+  </div>
+</footer>

@@ -1,0 +1,11 @@
+---
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+---
+<aside class:list={['disclaimer', { compact }]} aria-label="Важная информация">
+  <span class="disclaimer-icon" aria-hidden="true">i</span>
+  <div>
+    <strong>Обратите внимание</strong>
+    <p>Credora не является банком или микрофинансовой организацией и не выдаёт финансовые продукты. Информация представлена для ознакомления. Итоговые условия определяет финансовая организация.</p>
+  </div>
+</aside>

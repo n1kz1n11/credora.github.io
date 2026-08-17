@@ -1,0 +1,23 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { siteContact } from '../data/site';
+---
+<MainLayout title="Контакты | Credora" description="Контактная информация проекта Credora.">
+  <article class="legal-page contacts-page container">
+    <span class="breadcrumb"><a href="/">Главная</a><b>/</b> Контакты</span>
+    <h1>Контакты</h1>
+    <p class="legal-lead">По вопросам работы сайта и размещённой информации свяжитесь с командой Credora.</p>
+    <div class="contact-card">
+      <span class="contact-icon" aria-hidden="true">@</span>
+      <div><strong>Электронная почта</strong><p><a href={`mailto:${siteContact.email}`}>{siteContact.email}</a></p></div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-icon" aria-hidden="true">☎</span>
+      <div><strong>Телефон</strong><p><a href={siteContact.phoneHref}>{siteContact.phone}</a></p></div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-icon" aria-hidden="true">⌖</span>
+      <div><strong>Адрес</strong><p>{siteContact.address}</p></div>
+    </div>
+  </article>
+</MainLayout>

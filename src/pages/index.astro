@@ -1,0 +1,50 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Hero from '../components/Hero.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+---
+<MainLayout title="Credora — финансовые предложения в одном месте" description="Сравнивайте ключевые условия займов и банковских карт на одной понятной витрине Credora.">
+  <Hero />
+
+  <section class="home-categories section">
+    <div class="container">
+      <div class="section-heading">
+        <div><span class="eyebrow">Каталог</span><h2>Выберите нужное</h2></div>
+        <p>Основные условия собраны на карточках — быстро и без лишнего текста.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category-card category-loans" href="/loans/">
+          <div class="category-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M5 10.5 16 5l11 5.5v11L16 27 5 21.5v-11Z"/><path d="M10 14h12M10 18h8"/></svg>
+          </div>
+          <div class="category-copy"><span>Займы</span><strong>17 предложений</strong><p>Сумма, срок и ставка — самое важное для быстрого сравнения.</p></div>
+          <span class="category-link">Смотреть предложения <b aria-hidden="true">→</b></span>
+        </a>
+        <a class="category-card category-cards" href="/cards/">
+          <div class="category-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><rect x="4" y="7" width="24" height="18" rx="3"/><path d="M4 13h24M9 20h6"/></svg>
+          </div>
+          <div class="category-copy"><span>Банковские карты</span><strong>10 предложений</strong><p>Дебетовые и кредитные карты с ключевыми преимуществами.</p></div>
+          <span class="category-link">Смотреть предложения <b aria-hidden="true">→</b></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section section">
+    <div class="container how-grid">
+      <div class="how-copy">
+        <span class="eyebrow">О сервисе</span>
+        <h2>Спокойный выбор,<br />понятные условия</h2>
+        <p>Credora помогает быстро сориентироваться в финансовых предложениях. Мы показываем главное, а перед оформлением направляем на сайт выбранной организации.</p>
+      </div>
+      <ol class="steps-list">
+        <li><span>01</span><div><strong>Выберите категорию</strong><p>Займы или банковские карты.</p></div></li>
+        <li><span>02</span><div><strong>Сравните условия</strong><p>Сумма, срок, ставка и преимущества.</p></div></li>
+        <li><span>03</span><div><strong>Перейдите к организации</strong><p>Без промежуточных анкет и лишних шагов.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="container disclaimer-wrap"><Disclaimer /></section>
+</MainLayout>
