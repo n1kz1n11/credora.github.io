@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# TODO: configure PUBLIC_SITE_URL to publish an absolute sitemap URL.
