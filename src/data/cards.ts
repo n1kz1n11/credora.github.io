@@ -8,7 +8,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 30% кешбэка', 'Обслуживание — 0 ₽', 'До 10 000 ₽ кешбэка в месяц'],
     advantages: ['Бесплатный выпуск', 'До 5 категорий кешбэка', 'МТС Premium до 6 месяцев'],
     requirements: ['От 18 лет'], keyFeatures: ['Снятие до 100 000 ₽/мес. бесплатно', 'Переводы до 100 000 ₽/мес. бесплатно'],
-    partnerUrl: 'https://t.fincpanetwork.ru/click/77573/618?erid=2W5zFHxULji&sub1=botvotrmts', tags: ['дебетовая', 'кешбэк'],
+    partnerUrl: 'https://cutt.ly/HydHR754', tags: ['дебетовая', 'кешбэк'],
   },
   {
     id: 'rshb-unionpay', name: 'Россельхозбанк UnionPay', category: 'cards', type: 'Дебетовая карта', cardType: 'debit', logo: 'РСХБ', imageUrl: 'https://cdn.forbes.ru/forbes-static/new/2025/11/1-Rosselhozbank-6911efe9ec481.jpg',
@@ -17,7 +17,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 15% кешбэка', 'Выпуск — 0 ₽', 'Обслуживание — 0 ₽'],
     advantages: ['Для покупок за границей', 'Моментальная неименная карта', 'UnionPay'],
     requirements: [], keyFeatures: ['Именная карта готовится 2–7 дней', 'Получение в отделении банка'],
-    partnerUrl: 'https://t.fincpanetwork.ru/click/77573/930?erid=2W5zFGdgfuj&sub1=botvotrshz', tags: ['дебетовая', 'UnionPay'],
+    partnerUrl: 'https://cutt.ly/4ydHTeDJ', tags: ['дебетовая', 'UnionPay'],
   },
   {
     id: 'fora-vse-vklucheno', name: 'Фора-Банк — Всё включено', category: 'cards', type: 'Дебетовая карта', cardType: 'debit', logo: 'ФБ', imageUrl: 'https://www.ra-national.ru/wp-content/uploads/2024/12/forab-2x2-1.svg',
@@ -26,7 +26,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['Кешбэк до 10 000 ₽/мес.', 'Обслуживание — от 0 ₽', 'Срок действия — 5 лет'],
     advantages: ['Кешбэк рублями', 'Бесплатная курьерская доставка', 'Сезонные категории'],
     requirements: ['От 18 лет'], keyFeatures: ['0 ₽ в первый месяц', 'Далее 0 ₽ при выполнении одного из условий, иначе 149 ₽/мес.', 'Снятие до 30 000 ₽ в сторонних банкоматах бесплатно'],
-    partnerUrl: 'https://trk.ppdu.ru/click?uid=340956&oid=1182&erid=2SDnjeLQiFt&sub1=vitrinatrafffora', tags: ['дебетовая', 'МИР'],
+    partnerUrl: 'https://cutt.ly/yydHIqIg', tags: ['дебетовая', 'МИР'],
   },
   {
     id: 'tbank-black', name: 'Т-Банк Black', category: 'cards', type: 'Дебетовая карта', cardType: 'debit', logo: 'Т', imageUrl: 'https://s.rbk.ru/v1_companies_s3/media/trademarks/24274082-84cf-4819-b3cc-c5ed73703433.jpg',
@@ -35,7 +35,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 30% кешбэка', 'Обслуживание — от 0 ₽', 'До 15% в любимых категориях'],
     advantages: ['Кешбэк рублями', '4 категории на выбор', 'Бесплатные переводы по СБП'],
     requirements: [], keyFeatures: ['0 ₽ при остатке от 50 000 ₽, иначе 99 ₽/мес.', 'Снятие в банкоматах Т-Банка до 500 000 ₽/мес. бесплатно'],
-    partnerUrl: 'https://tbank.ru/baf/5ie5Q7Dh0VG', tags: ['дебетовая', 'кешбэк'],
+    partnerUrl: 'https://cutt.ly/QydHY4Ig', tags: ['дебетовая', 'кешбэк'],
   },
   {
     id: 'tbank-black-premium', name: 'Т-Банк Black Premium', category: 'cards', type: 'Премиальная дебетовая карта', cardType: 'debit', logo: 'Т+', imageUrl: 'https://s.rbk.ru/v1_companies_s3/media/trademarks/24274082-84cf-4819-b3cc-c5ed73703433.jpg',
@@ -44,7 +44,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 60 000 ₽ кешбэка', 'До 10% за отели', 'До 12% на накопительный счёт'],
     advantages: ['Страховка в поездках', 'Бизнес-залы', 'Выделенная поддержка 24/7'],
     requirements: [], keyFeatures: ['Условия обслуживания зависят от уровня Premium', 'Бесплатные валютные счета и консьерж'],
-    partnerUrl: 'https://trk.ppdu.ru/click?uid=340956&oid=2502&erid=Kra245bYt&sub1=tbankvitrdebeett', tags: ['дебетовая', 'премиальная'],
+    partnerUrl: 'https://cutt.ly/eydHTbDn', tags: ['дебетовая', 'премиальная'],
   },
   {
     id: 'alfa-orange', name: 'Альфа-Банк — Апельсиновая карта', category: 'cards', type: 'Дебетовая карта', cardType: 'debit', logo: 'А', imageUrl: 'https://cdn1.postupi.online/images/images0/00/117.png',
@@ -53,7 +53,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 7% кешбэка', 'Обслуживание — 0 ₽', 'До 100% чека Апельсинками'],
     advantages: ['Бесплатная без условий', 'Кешбэк Апельсинками', '1 ₽ = 10 Апельсинок'],
     requirements: [], keyFeatures: ['Оплата Апельсинками в Пятёрочке и Перекрёстке', 'За товары по акции кешбэк не начисляется'],
-    partnerUrl: 'https://t.fincpanetwork.ru/click/77573/556?erid=2W5zFGy1aGQ&sub1=alfadebetkaapelsvitr', tags: ['дебетовая', 'кешбэк'],
+    partnerUrl: 'https://cutt.ly/iydHTRCR', tags: ['дебетовая', 'кешбэк'],
   },
   {
     id: 'otp-120', name: 'ОТП Банк — 120 дней без %', category: 'cards', type: 'Кредитная карта', cardType: 'credit', logo: 'ОТП', imageUrl: 'https://s.rbk.ru/v1_companies_s3/media/trademarks/b3cbf20d-ca20-474f-b7ff-691ddfda1250.jpg',
@@ -62,7 +62,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 120 дней без %', 'Лимит до 1 000 000 ₽', 'Обслуживание — 0 ₽'],
     advantages: ['До 10% в 5 категориях', 'Рассрочка до 24 месяцев', 'Снятие наличных без комиссии'],
     requirements: ['От 21 года', 'Оформление по паспорту'], keyFeatures: ['Минимальный платёж — 2%, минимум 500 ₽', 'ПСК 44,000–63,999% годовых'],
-    partnerUrl: 'https://t.fincpanetwork.ru/click/77573/941?erid=2W5zFHUSt6V&sub1=bobootpliv', tags: ['кредитная', '120 дней'],
+    partnerUrl: 'https://cutt.ly/JydHUAET', tags: ['кредитная', '120 дней'],
   },
   {
     id: 'uralsib-credit', name: 'Уралсиб', category: 'cards', type: 'Кредитная карта', cardType: 'credit', logo: 'У', imageUrl: 'https://cdn.forbes.ru/forbes-static/new/2024/08/Uralsib-66b0d3c0148e1.jpg',
@@ -71,7 +71,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 120 дней без %', 'Лимит до 5 000 000 ₽', 'Обслуживание — 0 ₽'],
     advantages: ['Бесплатно без условий', 'Кешбэк у партнёров до 30%', 'Для заявки только паспорт'],
     requirements: ['От 18 лет', 'Паспорт'], keyFeatures: ['Бесплатное обслуживание навсегда'],
-    partnerUrl: 'https://t.fincpanetwork.ru/click/77573/407?erid=2W5zFH4Ww45&sub1=uralboural', tags: ['кредитная', '120 дней'],
+    partnerUrl: 'https://cutt.ly/VydHUyqZ', tags: ['кредитная', '120 дней'],
   },
   {
     id: 'tbank-credit', name: 'Т-Банк', category: 'cards', type: 'Кредитная карта', cardType: 'credit', logo: 'Т', imageUrl: 'https://s.rbk.ru/v1_companies_s3/media/trademarks/24274082-84cf-4819-b3cc-c5ed73703433.jpg',
@@ -80,7 +80,7 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['До 55 дней без %', 'Лимит до 700 000 ₽', 'Обслуживание — от 0 ₽'],
     advantages: ['Рассрочка до 12 месяцев', 'Кешбэк до 30% баллами', 'Бесплатное пополнение'],
     requirements: [], keyFeatures: ['Оформление за 5 минут'],
-    partnerUrl: 'https://t.fincpanetwork.ru/click/77573/27/2?erid=2W5zFKAWohb&sub1=tbankvitrino4ka', tags: ['кредитная', 'рассрочка'],
+    partnerUrl: 'https://cutt.ly/9ydHUbq7', tags: ['кредитная', 'рассрочка'],
   },
   {
     id: 'alfa-credit', name: 'Альфа-Банк', category: 'cards', type: 'Кредитная карта', cardType: 'credit', logo: 'А', imageUrl: 'https://cdn1.postupi.online/images/images0/00/117.png',
@@ -89,6 +89,6 @@ export const cards: BankCardOffer[] = [
     primaryConditions: ['60 дней без %', 'Лимит до 1 000 000 ₽', 'Первый год — 0 ₽'],
     advantages: ['Кешбэк за покупки', 'Бесплатная доставка', 'Кредитные каникулы для части клиентов'],
     requirements: [], keyFeatures: ['Далее 990 ₽ при расходных операциях', 'Собственные деньги можно переводить на счёт в Альфа-Банке без комиссии'],
-    partnerUrl: 'https://t.fincpanetwork.ru/click/77573/339?erid=2W5zFJjJPEG&sub1=alfacreditcardkakaka', tags: ['кредитная', '60 дней'],
+    partnerUrl: 'https://cutt.ly/5ydHUXRl', tags: ['кредитная', '60 дней'],
   },
 ];

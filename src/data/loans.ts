@@ -9,7 +9,7 @@ export const loans: LoanOffer[] = [
     advantages: ['Первый займ — 0%', 'Получение на карту', 'Досрочное погашение'],
     requirements: ['18–75 лет', 'Паспорт и прописка РФ', 'Активный мобильный номер'],
     receiving: ['Банковская карта на имя заёмщика'], repayment: ['Онлайн на сайте или в личном кабинете', 'По банковским реквизитам', 'Сбербанк Онлайн', 'Почта России'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=4464&p=adnetwork&aff_sub=bistrovitr', tags: ['первый займ 0%', 'на карту'],
+    partnerUrl: 'https://cutt.ly/PydHxhfU', tags: ['первый займ 0%', 'на карту'],
   },
   {
     id: 'polizaym', name: 'ПолиЗайм', category: 'loans', type: 'МФО', logo: 'ПЗ', imageUrl: 'https://brobank.ru/wp-content/uploads/2026/04/polyzaim.png',
@@ -18,7 +18,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', 'До 30 дней', 'До 0,8% в день'],
     advantages: ['Решение от 1 минуты', 'Пролонгация до 30 дней', 'Без скрытых сборов'],
     requirements: ['От 18 лет', 'Паспорт гражданина РФ'], receiving: ['Онлайн', 'В офисе компании'], repayment: ['В личном кабинете'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=6479&p=adnetwork&aff_sub=polyvitr', tags: ['онлайн', 'пролонгация'],
+    partnerUrl: 'https://cutt.ly/KydHmOuN', tags: ['онлайн', 'пролонгация'],
   },
   {
     id: 'ligamfo', name: 'ЛигаМФО', category: 'loans', type: 'МФО', logo: 'ЛМ', imageUrl: 'https://www.banklab.ru/static/mfo/images/6c/10/26/6c10263232600d3659cee73a7c834fa3_290x185.png',
@@ -27,7 +27,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 100 000 ₽', 'До 180 дней', 'От 0,082% в день'],
     advantages: ['Наличными или на карту', 'Срок до полугода', 'Оформление в офисе'],
     requirements: ['18–75 лет', 'Паспорт РФ'], receiving: ['Наличными в офисе', 'На банковскую карту в офисе'], repayment: [],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=7006&p=adnetwork&aff_sub=vitrina', tags: ['офлайн', 'до 180 дней'],
+    partnerUrl: 'https://cutt.ly/GydHQoTx', tags: ['офлайн', 'до 180 дней'],
   },
   {
     id: 'bunnymoney', name: 'BunnyMoney', category: 'loans', type: 'МФО', logo: 'BM', imageUrl: 'https://moneyman.ru/wp-content/uploads/2025/04/Bunny-money.png',
@@ -36,7 +36,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '3–30 дней', 'От 0%'],
     advantages: ['Онлайн-оформление', 'На карту или наличными', 'Несколько способов погашения'],
     requirements: ['21–70 лет', 'Гражданство РФ', 'Телефон, e-mail и именная карта'], receiving: ['На банковскую карту', 'Наличными в офисе'], repayment: ['Наличными в офисе', 'Банковский счёт', 'Банковская карта'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=6632&p=adnetwork&aff_sub=bunnnvitr', tags: ['онлайн', 'от 0%'],
+    partnerUrl: 'https://cutt.ly/FydHQhEF', tags: ['онлайн', 'от 0%'],
   },
   {
     id: 'cashiro', name: 'Cashiro', category: 'loans', type: 'МФО', logo: 'CA', imageUrl: 'https://moneyman.ru/wp-content/uploads/2025/04/Cashiro.png',
@@ -45,7 +45,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '3–30 дней', 'От 0%'],
     advantages: ['Онлайн-заявка', 'Получение на карту', 'Погашение картой'],
     requirements: ['21–70 лет', 'Гражданство РФ', 'Телефон, e-mail и именная карта'], receiving: ['На банковскую карту', 'Наличными в офисе'], repayment: ['Наличными в офисе', 'Банковский счёт', 'Банковская карта'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=6687&p=adnetwork&aff_sub=cashhvitr', tags: ['онлайн', 'на карту'],
+    partnerUrl: 'https://cutt.ly/FydHQnBK', tags: ['онлайн', 'на карту'],
   },
   {
     id: 'dobrozaym', name: 'ДоброЗайм', category: 'loans', type: 'МФО', logo: 'ДЗ', imageUrl: 'https://moneyman.ru/wp-content/uploads/2025/05/DobroZajm.jpg',
@@ -54,7 +54,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 200 000 ₽', 'До 378 дней', 'От 0%'],
     advantages: ['До 4 бесплатных займов в год', 'Бесплатная пролонгация', 'На карту или наличными'],
     requirements: ['18–90 лет', 'Гражданство РФ', 'Паспорт'], receiving: ['Наличными в офисе', 'На карту онлайн, в приложении или по телефону'], repayment: ['В офисе', 'На сайте или в приложении', 'Через Почту России или банк'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=7178&p=adnetwork&aff_sub=dobrozaimvitr', tags: ['до 200 000 ₽', 'бесплатный займ'],
+    partnerUrl: 'https://cutt.ly/nydHQODH', tags: ['до 200 000 ₽', 'бесплатный займ'],
   },
   {
     id: 'nova-credit', name: 'Nova Credit', category: 'loans', type: 'МФО', logo: 'NC', imageUrl: 'https://my-zaim.com/logos/015b554769f32d86d391d7deb3cae969.jpg',
@@ -63,7 +63,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '3–30 дней', 'От 0%'],
     advantages: ['Работа 24/7', 'На карту или наличными', 'Погашение картой'],
     requirements: ['От 21 года', 'Гражданство РФ', 'Телефон, e-mail и именная карта'], receiving: ['На банковскую карту', 'Наличными в офисе'], repayment: ['Наличными в офисе', 'Банковский счёт', 'Банковская карта'],
-    partnerUrl: 'https://go.lead-gid.ru/aff_c?aff_id=149424&offer_id=7255&p=adnetwork&aff_sub=novavitr', tags: ['24/7', 'онлайн'],
+    partnerUrl: 'https://cutt.ly/QydHQXQy', tags: ['24/7', 'онлайн'],
   },
   {
     id: 'smart-cash', name: 'Умные Наличные', category: 'loans', type: 'МФО', logo: 'УН', imageUrl: 'https://finango.ru/wp-content/uploads/umnye-nalichnye-1.jpg',
@@ -72,7 +72,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '5–30 дней', '0,8% в день'],
     advantages: ['Рассмотрение 24/7', 'Получение на карту', 'Для заявки паспорт и карта'],
     requirements: ['18–65 лет', 'Гражданство РФ', 'Кроме Северного Кавказа'], receiving: ['Банковская карта'], repayment: ['Банковская карта'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=5562&p=adnetwork&aff_sub=umnnalvitr', tags: ['24/7', 'на карту'],
+    partnerUrl: 'https://cutt.ly/4ydHWexb', tags: ['24/7', 'на карту'],
   },
   {
     id: 'likezaym', name: 'ЛайкЗайм', category: 'loans', type: 'МФО', logo: 'ЛЗ', imageUrl: 'https://zaimi-24.ru/media/offer/31/312c83e6a745432a879b9540e5cc7dbd.png',
@@ -81,7 +81,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '7–16 дней', 'Первый займ — 0%'],
     advantages: ['Первый займ под 0%', 'Получение на карту', 'Онлайн-сервис'],
     requirements: ['18–65 лет', 'Гражданство РФ'], receiving: ['Банковская карта'], repayment: [],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=6686&p=adnetwork&aff_sub=likzaemvitr', tags: ['первый займ 0%', 'на карту'],
+    partnerUrl: 'https://cutt.ly/uydHWhho', tags: ['первый займ 0%', 'на карту'],
   },
   {
     id: 'fin-navigator', name: 'Финансовый Навигатор', category: 'loans', type: 'КПК', logo: 'ФН', imageUrl: 'https://brobank.ru/wp-content/uploads/2026/04/zaym-navifin.png',
@@ -90,7 +90,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '7–56 дней', '0,6% в день'],
     advantages: ['Вступление в КПК онлайн', 'Оформление онлайн', 'Срок до 56 дней'],
     requirements: ['18–65 лет', 'Гражданство РФ', 'Членство в КПК'], receiving: ['По одобренной заявке в часы работы'], repayment: [],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=7214&p=adnetwork&aff_sub=finnavvitr', tags: ['КПК', 'онлайн'],
+    partnerUrl: 'https://cutt.ly/7ydHEZ0K', tags: ['КПК', 'онлайн'],
   },
   {
     id: 'max-credit', name: 'Max.Credit', category: 'loans', type: 'МФО', logo: 'MC', imageUrl: 'https://static.tildacdn.com/tild3733-6131-4034-a266-366261356665/maxcredit.png',
@@ -99,7 +99,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '1–30 дней', '0,8% в день'],
     advantages: ['Получение на карту', 'Первый займ до 7 000 ₽', 'Несколько способов погашения'],
     requirements: ['18–70 лет', 'Паспорт РФ и телефон', 'Кроме Северного Кавказа'], receiving: ['Банковская карта'], repayment: ['Банковская карта', 'Терминалы Элекснет', 'Банковский перевод'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=5316&p=adnetwork&aff_sub=maxcrvitr', tags: ['онлайн', 'быстро'],
+    partnerUrl: 'https://cutt.ly/DydHE3XZ', tags: ['онлайн', 'быстро'],
   },
   {
     id: 'greenmoney', name: 'GreenMoney', category: 'loans', type: 'МФО', logo: 'GM', imageUrl: 'https://s.rbk.ru/v1_companies_s3/media/trademarks/995c2634-13b8-40f2-8f2f-90b3c9aed840.jpg',
@@ -108,7 +108,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '7–21 день', 'Первый займ — 0%'],
     advantages: ['Без скрытых подписок', 'Получение на карту', 'Первый займ — 0%'],
     requirements: ['18–65 лет', 'Паспорт РФ', 'Постоянный источник дохода'], receiving: ['Именная банковская карта российского банка'], repayment: ['Банковская карта', 'SMS или QIWI-терминал', 'Банковский перевод'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=7390&p=adnetwork&aff_sub=grinvitr', tags: ['первый займ 0%', 'без подписок'],
+    partnerUrl: 'https://cutt.ly/PydHRraE', tags: ['первый займ 0%', 'без подписок'],
   },
   {
     id: 'kapitalina', name: 'Капиталина', category: 'loans', type: 'МФО', logo: 'КА', imageUrl: 'https://knopkadengi.ru/wp-content/uploads/2025/05/capitalina-frejm.jpg',
@@ -117,7 +117,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '3–30 дней', 'От 0%'],
     advantages: ['Онлайн-оформление', 'На карту или наличными', 'Несколько способов погашения'],
     requirements: ['21–70 лет', 'Гражданство РФ'], receiving: ['Банковская карта', 'Наличными в офисе'], repayment: ['Наличными в офисе', 'Банковский счёт', 'Банковская карта'],
-    partnerUrl: 'https://go.lead-gid.ru/aff_c?aff_id=149424&offer_id=6888&p=adnetwork&aff_sub=capppitvitr', tags: ['онлайн', 'от 0%'],
+    partnerUrl: 'https://cutt.ly/DydHRsJ2', tags: ['онлайн', 'от 0%'],
   },
   {
     id: 'zaymer', name: 'Займер', category: 'loans', type: 'МФО', logo: 'З', imageUrl: 'https://smart-lab.ru/uploads/2025/images/22/72/52/2025/07/15/88e453.png',
@@ -126,7 +126,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 30 000 ₽', '7–30 дней', 'Первый займ — 0%'],
     advantages: ['Первый займ — 0%', 'Получение по СБП или на карту', 'Досрочное погашение'],
     requirements: ['18–75 лет', 'Паспорт и прописка РФ', 'Активный мобильный номер'], receiving: ['Банковская карта', 'СБП'], repayment: ['Карта через личный кабинет', 'Банковский счёт', 'Сбербанк Онлайн', 'Терминал Элекснет'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=7073&p=adnetwork&aff_sub=zaimervitr', tags: ['первый займ 0%', 'СБП'],
+    partnerUrl: 'https://cutt.ly/SydHRv3b', tags: ['первый займ 0%', 'СБП'],
   },
   {
     id: 'u-abramovicha', name: 'У Абрамовича', category: 'loans', type: 'МФО', logo: 'УА', imageUrl: 'https://kredity-tut.ru/assets/images/microcredits/u-abramovicha.png',
@@ -135,7 +135,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 100 000 ₽', 'До 365 дней', 'Первый займ бесплатно'],
     advantages: ['Первый займ бесплатно', 'Любая кредитная история', 'Погашение картой'],
     requirements: ['18–85 лет', 'Гражданство РФ', 'Паспорт и банковская карта'], receiving: ['Банковская карта'], repayment: ['Банковская карта', 'Банковский перевод'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=6548&p=adnetwork&aff_sub=abrabovvitr', tags: ['первый займ 0%', 'до года'],
+    partnerUrl: 'https://cutt.ly/wydHRR8g', tags: ['первый займ 0%', 'до года'],
   },
   {
     id: 'nebus', name: 'Небус', category: 'loans', type: 'МФО', logo: 'Н', imageUrl: 'https://moneyman.ru/wp-content/uploads/2025/06/Nebus.jpg',
@@ -144,7 +144,7 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 100 000 ₽', 'До 12 недель', '0,8% в день'],
     advantages: ['Выезд менеджера', 'Индивидуальное рассмотрение', 'Получение на карту'],
     requirements: ['18–88 лет', 'Гражданство РФ', 'Доход и постоянная прописка'], receiving: ['Банковская карта'], repayment: ['Банковский счёт'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=6419&p=adnetwork&aff_sub=nebusvitr', tags: ['выезд менеджера', 'на карту'],
+    partnerUrl: 'https://cutt.ly/zydHRHdw', tags: ['выезд менеджера', 'на карту'],
   },
   {
     id: 'dozarplaty', name: 'ДоЗарплаты', category: 'loans', type: 'МФО', logo: 'ДЗ', imageUrl: 'https://moneyman.ru/wp-content/uploads/2025/05/Do-zarplaty.jpg',
@@ -153,6 +153,6 @@ export const loans: LoanOffer[] = [
     primaryConditions: ['До 100 000 ₽', 'До 365 дней', 'От 0%'],
     advantages: ['Работа 24/7', 'Досрочное погашение без комиссии', 'Получение на карту'],
     requirements: ['18–80 лет', 'Гражданство РФ', 'Паспорт'], receiving: ['Банковская карта'], repayment: ['Онлайн без комиссии', 'Автооплата с карты'],
-    partnerUrl: 'https://go.leadgid.ru/aff_c?aff_id=149424&offer_id=6097&p=adnetwork&aff_sub=dozarpvitr', tags: ['24/7', 'до года'],
+    partnerUrl: 'https://cutt.ly/7ydHRCJX', tags: ['24/7', 'до года'],
   },
 ];
